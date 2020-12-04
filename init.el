@@ -23,6 +23,7 @@
 
 ;; add customizations folder to load path, then load files
 (add-to-list 'load-path "~/.emacs.d/customizations")
+(load "editing")
 (load "setup-common-lisp")
 (load "ui")
 

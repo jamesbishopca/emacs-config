@@ -15,3 +15,5 @@
 
 ;; set theme
 (load-theme 'zenburn t)
+
+(provide 'ui)
