@@ -16,4 +16,10 @@
 ;; set theme
 (load-theme 'zenburn t)
 
+;; Highlights matching parenthesis
+(show-paren-mode 1)
+
+;; Highlight current line
+(global-hl-line-mode 1)
+
 (provide 'ui)
