@@ -1,3 +1,7 @@
+;;; ui --- UI customizations
+;;; Commentary:
+
+;;; Code:
 ;; disable menubar
 (menu-bar-mode -1)
 
@@ -23,3 +27,4 @@
 (global-hl-line-mode 1)
 
 (provide 'ui)
+;;; ui.el ends here
