@@ -10,6 +10,10 @@
 
 (defvar my-packages
   '(
+    ;; on the fly linting of source code
+    flycheck
+    ;; make editing les painful with better parens
+    paredit
     ;; make editing less painful with rainbows
     rainbow-delimiters
     ;; a common lisp editing mode for Emacs.
