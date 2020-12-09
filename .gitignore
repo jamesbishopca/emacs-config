@@ -1,3 +1,6 @@
 auto-save-list
 elpa
 *~
+.recentf
+ido.last
+session.*
