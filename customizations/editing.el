@@ -1,9 +1,15 @@
+;;; editing.el --- customizations related to editing files
+
+;;; Commentary:
+
+;;; Code:
+
 ;; Don't use hard tabs
 (setq-default indent-tabs-mode nil)
 (defun die-tabs ()
   "Use two spaces for tabs."
   (interactive)
-  (set-veriable 'tab-width 2)
+  (set-variable 'tab-width 2)
   (mark-whole-buffer)
   (untabify (region-beginning) (region-end))
   (keyboard-quit))

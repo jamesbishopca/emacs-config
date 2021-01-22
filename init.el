@@ -4,9 +4,12 @@
 ;;; Code:
 ;; set up packages
 (require 'package)
-
-(setq package-archives '(("melpa" . "https://melpa.org/packages/")))
-
+(add-to-list 'package-archives
+             '("tromey" . "http://tromey.com/elpa/") t)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -14,6 +17,10 @@
 
 (defvar my-packages
   '(
+    ;; add clojure support to emacs
+    clojure-mode
+    ;; a clojure REPL inside of emacs
+    cider
     ;; on the fly linting of source code
     flycheck
     ;; add markdown support to emacs
@@ -33,7 +40,9 @@
 
 ;; add customizations folder to load path, then load files
 (add-to-list 'load-path "~/.emacs.d/customizations")
+(load "clojure")
 (load "editing")
+(load "miscellaneous")
 (load "navigation")
 (load "setup-emacs-lisp")
 (load "setup-common-lisp")

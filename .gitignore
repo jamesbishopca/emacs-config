@@ -4,3 +4,4 @@ elpa
 .recentf
 ido.last
 session.*
+cider-history
