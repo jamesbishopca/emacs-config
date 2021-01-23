@@ -3,7 +3,7 @@
 
 ;;; Code:
 ;; use clisp as the common lisp repl in emacs
-(setq inferior-lisp-program "/usr/bin/clisp")
+(setq inferior-lisp-program "/usr/bin/env sbcl")
 
 ;; enable paredit for common lisp
 (add-hook 'lisp-mode-hook #'enable-paredit-mode)
