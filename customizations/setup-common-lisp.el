@@ -8,5 +8,8 @@
 ;; enable paredit for common lisp
 (add-hook 'lisp-mode-hook #'enable-paredit-mode)
 
+;; enable paredit for slime
+(add-hook 'slime-repl-mode-hook #'enable-paredit-mode)
+
 (provide 'setup-common-lisp)
 ;;; setup-common-lisp.el ends here

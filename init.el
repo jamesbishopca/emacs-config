@@ -40,12 +40,12 @@
 
 ;; add customizations folder to load path, then load files
 (add-to-list 'load-path "~/.emacs.d/customizations")
-(load "clojure")
 (load "editing")
 (load "miscellaneous")
 (load "navigation")
-(load "setup-emacs-lisp")
+(load "setup-clojure")
 (load "setup-common-lisp")
+(load "setup-emacs-lisp")
 (load "ui")
 
 (provide 'init)

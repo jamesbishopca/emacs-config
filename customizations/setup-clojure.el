@@ -1,11 +1,11 @@
-;;; clojure.el --- customizations specific to editing clojure files
+;;; setup-clojure.el --- customizations specific to editing clojure files
 
 ;;; Commentary:
 
 ;;; Code:
 
 ;; Enable paredit for Clojure
-(add-hook 'clojure-mode-hok 'enable-paredit-mode)
+(add-hook 'clojure-mode-hook 'enable-paredit-mode)
 
 ;; helpful when working with class names that use camel-case.
 (add-hook 'clojure-mode-hook 'subword-mode)
@@ -48,5 +48,5 @@
 (add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("lein-env" . enh-ruby-mode))
 
-(provide 'clojure)
-;;; clojure.el ends here
+(provide 'setup-clojure)
+;;; setup-clojure.el ends here
